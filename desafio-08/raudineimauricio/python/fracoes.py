@@ -55,8 +55,6 @@ def processa_linha(linha: str) -> str:
         if denominador < 0:
             numerador, denominador = -numerador, -denominador
 
-        if numerador == 0:
-            return "0"
 
         divisor_comum = mdc(numerador, denominador)
         numerador //= divisor_comum
